@@ -1,0 +1,11 @@
+- type: roundPreset
+  id: MyCustomMode
+  name: "Мой Кастомный Режим"
+  description: "Твой первый режим"
+  components:
+  - type: PresetSpawnJobs
+    jobs:
+      Robotech: 1.0     # все спавнятся твоей ролью
+  - type: PresetSpawnPoints
+    points:
+      Robotech: 999

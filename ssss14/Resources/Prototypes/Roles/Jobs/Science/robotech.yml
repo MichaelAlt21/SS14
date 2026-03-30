@@ -1,0 +1,34 @@
+- type: job
+  id: Robotech
+  name: job-name-robotech
+  description: job-description-robotech
+  playTimeTracker: JobRobotech
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobScientist
+      time: 2.5h
+  startingGear: RobotechGear
+  icon: "JobIconRoboticist"
+  supervisors: job-supervisors-rd
+  access:
+  - Research
+  - Maintenance
+
+- type: startingGear
+  id: RobotechGear
+  equipment:
+    ears: ClothingHeadsetScience
+  #storage:
+    #back:
+    #- Stuff
+
+- type: chameleonOutfit
+  id: ScientistChameleonOutfit
+  job: Scientist
+  equipment:
+    head: ClothingHeadBandSkull
+    eyes: ClothingEyesGlassesCheapSunglasses
+    mask: ClothingMaskGas
+    neck: ClothingNeckTieSci
+    outerClothing: ClothingOuterCoatRnd
+    gloves: ClothingHandsGlovesLatex
